@@ -1,0 +1,74 @@
+buildType:
+  default: debug
+  choices:
+    debug:
+      short: Debug
+      long: Emit debug information
+      buildType: Debug
+    release:
+      short: Release
+      long: Optimize generated code
+      buildType: Release
+    asan:
+      short: Asan
+      long: Instrument with Address Sanitizer
+      buildType: Asan
+    tsan:
+      short: Tsan
+      long: Instrument with Thread Sanitizer
+      buildType: Tsan
+
+linkage:
+  default: static
+  choices:
+    static:
+      short: Static
+      long: Create static libraries
+      linkage: static
+    shared:
+      short: Shared
+      long: Create shared libraries/DLLs
+      linkage: shared
+
+engine:
+  default: ogl
+  choices:
+    ogl:
+      short: OpenGL
+      long: OpenGL rendering
+      settings:
+        ENGINE: OpenGL
+    d3d:
+      short: Direct3D
+      long: Direct3D rendering
+      settings:
+        ENGINE: Direct3D
+    vulkan:
+      short: Vulkan
+      long: Vulkan rendering
+      setting:
+        ENGINE: Vulkan
+    software:
+      short: Software
+      long: Software rendering
+      setting:
+        ENGINE: Software
+
+network:
+  default: boost
+  choices:
+    boost:
+      short: Boost.Asio
+      long: Use Boost.Asio for networking
+      setting:
+        NETWORK: Boost
+    asio:
+      short: Asio
+      long: Use standalone-Asio for networking
+      setting:
+        NETWORK: Asio
+    net-ts:
+      short: NetTS
+      long: Use the C++ Networking TS for networking
+      setting:
+        NETWORK: net-ts
