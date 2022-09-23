@@ -1,3 +1,5 @@
+# source: https://vector-of-bool.github.io/docs/vscode-cmake-tools/variants.html (last accessed 23.09.22)
+# author: vector-of-bool (https://vector-of-bool.github.io/)
 buildType:
   default: debug
   choices:

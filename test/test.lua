@@ -4,6 +4,11 @@ local here = arg[0]:match("(.*/)")
 local inspect = require(here .. "inspect")
 local simpleyaml = require("../src/simpleyaml")
 
-local path = here .. "inputs/cmake-variants.yaml"
-local variants = simpleyaml.parseFile(path)
-print(inspect(variants))
+local function test(file)
+  local path = here .. "inputs/" .. file
+  local parsed = simpleyaml.parse_file(path)
+  print(inspect(parsed))
+end
+
+test("cmake-variants.yaml")
+test("example.yaml")

@@ -1,0 +1,14 @@
+---
+
+# Example
+
+someExample:
+  someKey: Here is some string
+  anotherKey: 42
+  subExample1:
+    foo: bar
+  subExample2:
+    hello: world
+
+anotherExample:
+  thats: it
