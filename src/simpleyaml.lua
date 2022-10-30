@@ -92,7 +92,7 @@ function simpleyaml.parse_file(path)
     end
 
     local indent = line:match("(%s*)%S.*"):len() -- get indent of current line
-    if #indents > 0 then -- if line indented
+    if #indents > 0 then -- if stack of indents not empty
       local prevIndent = indents[#indents]
 
       -- compare with indent of previous line
