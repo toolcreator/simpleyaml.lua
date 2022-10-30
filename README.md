@@ -8,7 +8,6 @@ Features:
 - parses correct files (practically no error handling)
 - no dependencies
 - single-file
-- < 100 lines of code
 
 ## Example
 
