@@ -5,7 +5,9 @@ Very simple [YAML](https://yaml.org/) parser written in Lua.
 Features:
 
 - understands a "useful" subset of YAML
-- parses correct files (practically no error handling)
+- parses correct files
+  - line-based parser, each line needs to contain a key
+  - almost no error handling
 - no dependencies
 - single-file
 
