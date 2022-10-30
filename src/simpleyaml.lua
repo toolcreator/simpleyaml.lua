@@ -114,6 +114,9 @@ function simpleyaml.parse_file(path)
     table.insert(indents, indent) -- insert current indent into stack
 
     local key = line:match("%s*(.*):") -- read the key from the line (everything before ':')
+    if key == "" then -- no key found, error
+      return nil
+    end
     insertKey(key, nestingLevel, parsed) -- insert the key
 
     line = line:match(":%s*(.*)%s*") -- read rest of the line (everything after ':')
