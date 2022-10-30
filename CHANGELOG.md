@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.1.1
+
+- Fix parse error with directives
+
 ## v1.1.0
 
 - Signal error when a line without a key is encountered
